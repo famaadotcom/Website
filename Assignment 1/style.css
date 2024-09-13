@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: -3%;
+    padding: 5%;
+    background-color: #DBCADB;
+    font-family: "Merriweather";
+}
+/* target the nav element */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#nav-left > #logo{
+    width: 120px;
+}
+
+#nav-center > ul {
+    display: flex;
+    font: size 25px;
+    list-style: none;
+    gap: 15%;
+}
+
+#navlinks > li >a {
+    text-decoration: none;
+    font-size: 28px;
+    gap: 15%;
+    color:brown;
+}
+
+#nav-right {
+    margin: -40%;
+}
+ 
+#nav-right > a {
+    border: 2px solid #111;
+    font-size: 20px;
+    border-radius: 5px;
+    color: black;
+    background-color:orange;
+    text-decoration: none;
+}
+
+#hero > h1 {
+    color: 083d77;
+    width: 1200px;
+    height: 200px;
+    font-family: "Merriweather";
+    font-size: 100px;
+    font-weight: 600;
+    border-style: solid;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#hero > h2{
+    font-size: 20px;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#images > img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin: 5%;
+    align-items: center;
+     transform: translate(-50%, -50%);
+    border-radius: 50px;
+    animation: fadeInOut 15s infinite;
+}
+
+#images #img2 {
+    transform: translate(-50%, -50%) rotate(-15deg);
+    animation-delay: 3s;
+
+}
+
+#images #img3 {
+    transform: translate(-50%, -50%) rotate(-13deg);
+    animation-delay: 6s;
+}
+
+#images #img4 {
+    transform: translate(-50%, -50%) rotate(-11deg);
+    animation-delay: 9s;
+
+}
+
+#images #img5 {
+    transform: translate(-50%, -50%) rotate(-10deg);
+    animation-delay: 12s;
+
+}
+
+#images #img6 {
+    transform: translate(-50%, -50%) rotate(-9deg);
+    animation-delay: 15s;
+
+}
+
+#images #img1 {
+    animation-delay: 0s;
+}
+
+@keyframes fadeInOut {
+    0%, 20% {
+        opacity: 1;
+    }
+    21%, 100% {
+        opacity: 0;
+    }
+    }
+
+   
