@@ -8,10 +8,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    margin: -3%;
-    padding: 5%;
     background-color: #DBCADB;
-    font-family: "Merriweather";
 }
 /* target the nav element */
 nav{
@@ -25,27 +22,26 @@ nav{
     width: 120px;
 }
 
-#nav-center > ul {
+#nav-center > #navlinks {
     display: flex;
     font-size: 25px;
     list-style: none;
-    gap: 15%;
+    gap: 12%;
 }
 
 #navlinks > li > a {
     text-decoration: none;
     font-size: 28px;
-    gap: 15%;
     color:brown;
 }
 
 #nav-right {
-    margin: 0%;
+    margin-right: 2%;
 }
  
 #nav-right > a {
     border: 2px solid #111;
-    font-size: 20px;
+    font-size: 22px;
     border-radius: 5px;
     color: black;
     background-color:orange;
@@ -54,22 +50,26 @@ nav{
 
 #hero > h1 {
     color: #083d77;
-    width: 90%;
-    height: 40%;
-    font-family: "Merriweather";
-    font-size: 100px;
-    font-weight: 600;
+    width: 100%;
+    font-size: 120px;
+    font-weight: 500;
     border-style: solid;
+    border-width: 2% 0%;
     position: absolute;
-    top: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     text-transform: uppercase;
+    font-family: "Merriweather";
 }
 
 #hero > h2{
-    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 60%;
     position: absolute;
-    top: 120%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     
@@ -80,10 +80,8 @@ nav{
     height: 300px;
     object-fit: cover;
     position: absolute;
-    top: 75%;
+    top: 50%;
     left: 50%;
-    margin: 5%;
-    align-items: center;
      transform: translate(-50%, -50%);
     border-radius: 50px;
     animation: fadeInOut 15s infinite;
@@ -131,4 +129,23 @@ nav{
     }
     }
 
-   
+    @media (max-width: 600px) {
+        #nav-left > #logo {
+            width: 100px;
+        }
+    
+        #navlinks > li > a {
+            font-size: 18px;
+        }
+        #hero h1 {
+            font-size: 70px;
+        }
+        #hero h2 {
+            font-size: 18px;
+        }
+    
+        #images img {
+            width: 150px;
+            height: 150px;
+        }
+    }
